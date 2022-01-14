@@ -17,4 +17,4 @@ jobs:
         cf_password: Azuredevops@123
         cf_org: 6fece677trial
         cf_space: prod
-        command: push MY-APP –p gs-spring-boot-0.1.0.jar
+        command: push MY-APP –p https://github.com/san39/rock-paper-scissors/gs-spring-boot-0.1.0.jar
