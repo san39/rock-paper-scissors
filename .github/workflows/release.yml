@@ -15,5 +15,5 @@ jobs:
         cf_api: https://api.cf.ap21.hana.ondemand.com
         cf_username: ramyaravindra999@gmail.com
         cf_password: Azuredevops@123
-        cf_space: dev
-        command: push -f manifest-dev.yml
+        command: target -s prod
+        command: deploy gs-spring-boot-0.1.0.jar
