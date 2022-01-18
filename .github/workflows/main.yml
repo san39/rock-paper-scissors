@@ -39,7 +39,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: github-actions-artifact
-          path: staging
+          path: ${{ github.workspace }}
         
       - run: |
           ls
