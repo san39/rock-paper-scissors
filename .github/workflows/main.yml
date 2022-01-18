@@ -40,7 +40,16 @@ jobs:
         with:
           name: github-actions-artifact
           path: '${{ github.workspace }}/target/*.jar'
-        
+          
+      - name: Step 6 - Deploy to CF
+        uses: guerric-p/cf-cli-action@master
+        with:
+          cf_api: https://api.cf.ap21.hana.ondemand.com
+          cf_username: ramyaravindra999@gmail.com
+          cf_password: Azuredevops@123
+          cf_org: 6fece677trial
+          cf_space: prod
+          command: push MY-APP –p *.jar
       - run: |
           ls
 
