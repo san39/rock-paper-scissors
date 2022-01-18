@@ -41,6 +41,8 @@ jobs:
           name: github-actions-artifact
           path: staging
         
+      - run: |
+          ls
 
 
           
