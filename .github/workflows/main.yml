@@ -4,7 +4,7 @@ name: GitHub Actions Maven Build Example
 
 on:
   push:
-    branches: [ master ]
+    branches: [ test 1 ]
 jobs:
 
   build-on-ubuntu:
@@ -41,7 +41,7 @@ jobs:
           name: github-actions-artifact
           path: '${{ github.workspace }}/target/*.jar'
           
-      - name: Step 6 - Deploy to CF
+      - name: Step 6 - Deploy to CF test
         uses: guerric-p/cf-cli-action@master
         with:
           cf_api: https://api.cf.ap21.hana.ondemand.com
